@@ -1,0 +1,28 @@
+{
+  "name": "@hellcat29a/ze-package",
+  "version": "1.0.0",
+  "type": "module",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./logic": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "^0.0.1",
+    "typescript": "latest"
+  },
+  "keywords": [],
+  "author": "@hellcat29a",
+  "license": "ISC", 
+  "description": ""
+}
